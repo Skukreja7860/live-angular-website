@@ -1,0 +1,147 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Popular Courses</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Popular Courses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    <div id="courses_wrapper" class="courses_wrapper"
+        style="background-color:lightsteelblue;margin:20px 0px 20px 0px;display:flex">
+
+
+        <div class="container" *ngFor="let x of allcourse">
+
+
+
+
+
+
+
+
+            <div class="course_block" style="width:500px;height:400px;margin:40px">
+                <div>
+                
+                    <!-- <iframe width="460" height="240" src="https://www.youtube.com/embed/uONz0lEWft0?list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> -->
+                    <a routerLink="/courseDetail" [queryParams]="{courseid:x._id}"><img
+                            src="uploads/{{x.coursedatapic}}" width="460" height="240"></a>
+                    <div>
+                        <a href="course_dtl.html" title="View More"></a>
+                    </div><br />
+                    <h4>{{x.coursedataname}}
+                    
+                    </h4>
+                </div>
+                <div class="science">
+                    <div class="course_info">
+
+                    </div>
+                </div>
+                <div class="science course_count_wrap">
+                    <div class="course_count">
+                        Duration: <span>{{x.coursedataduration}}</span>
+                    </div>
+                    <div class="course_price">
+                        Fees: <span>{{x.coursedatarate}}</span>
+                    </div>
+                  
+                </div>
+            </div>
+
+           
+
+
+            <!-- <div class="course_block" style="width:500px;height:400px;margin:40px">
+                <div>
+                    <!-- <iframe width="460" height="240" src="https://www.youtube.com/embed/onldWh9n8e4?list=PL6hthfHszOAA92rzPAqylicTBeXnQ4RT2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> 
+                        <a routerLink="/courseDetail" [queryParams]="{pid:105}"><img src="images/communication.png" width="460" height="240"></a>
+                    <div>
+                        <a href="course_dtl.html" title="View More"></a>
+                    </div><br/>
+                    <h4>Communication Skills Training</h4>
+                </div>
+                <div class="science">
+                    <div class="course_info">
+
+                    </div>
+                </div>
+                <div class="science course_count_wrap">
+                    <div class="course_count">
+                        Duration: <span>2 Month</span>
+                    </div>
+                    <div class="course_price">
+                        Fees: <span><del>$100.00</del>&nbsp;Free</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course_block" style="width:500px;height:400px;margin:40px">
+                <div>
+                     <iframe width="460" height="240" src="https://www.youtube.com/embed/onldWh9n8e4?list=PL6hthfHszOAA92rzPAqylicTBeXnQ4RT2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe> 
+                    <a routerLink="/courseDetail" [queryParams]="{pid:106}"><img src="images/veidcmaths.jfif" width="460"
+                            height="240"></a>
+                    <div>
+                        <a href="course_dtl.html" title="View More"></a>
+                    </div><br />
+                    <h4>Elementary Vedic Maths Course</h4>
+                </div>
+                <div class="science">
+                    <div class="course_info">
+            
+                    </div>
+                </div>
+                <div class="science course_count_wrap">
+                    <div class="course_count">
+                        Duration: <span>1.5 Month</span>
+                    </div>
+                    <div class="course_price">
+                        Fees: <span><del>$65.00</del>&nbsp;Free</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="course_block" style="width:500px;height:400px;margin:40px">
+                <div>
+                    <!-- <iframe width="460" height="240" src="<iframe width="872" height="654" src="https://www.youtube.com/embed/AcwpJoraJCk?list=PLT5KgGbN_RNRhYWuHiKrfDLmqjmtm0O-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <a routerLink="/courseDetail" [queryParams]="{pid:107}"><img src="images/astronomy.jpg" width="460"
+                            height="240"></a>
+                    <div>
+                        <a href="course_dtl.html" title="View More"></a>
+                    </div><br />
+                    <h4>Astronomy Course</h4>
+                </div>
+                <div class="science">
+                    <div class="course_info">
+            
+                    </div>
+                </div>
+                <div class="science course_count_wrap">
+                    <div class="course_count">
+                        Duration: <span>2.5 Month</span>
+                    </div>
+                    <div class="course_price">
+                        Fees: <span><del>$50.00</del>&nbsp;Free</span>
+                    </div>
+                </div>
+            </div>  -->
+
+
+
+
+        </div>
+     <h1 style="margin:5%">{{msg}}</h1>
+    </div>
+

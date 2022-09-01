@@ -1,0 +1,110 @@
+<div class="background">
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <input id="tab-3" type="radio" name="tab" class="sign2-up"><label for="tab-3" class="tab"></label>
+
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <form name="form2" #form2="ngForm">
+                        <div class="group">
+                            <br/><br/><br/>
+                            <br/><br/>
+                            <label for="user" class="label">E-mail</label>
+                            <input id="user" type="text" class="input" name="emailid" [(ngModel)]="emailid">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password" name="password" [(ngModel)]="password">
+                        </div>
+                        <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In" (click)="onlogin()">
+                        </div>
+
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <a href="#forgot">Forgot Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <form name="form1" #form1="ngForm">
+                    <div class="sign-up-htm"><br/><br/><br/>
+                        <div class="group" style="text-transform: uppercase; color: rgba(224, 223, 223, 0.897);font-weight:500;font-size:20px">What kind of user are you?</div>
+                        <br/><br/>
+                        <div style="margin:15px">
+                            <label><input type="radio" name="person" value="seeker" style="margin:5px;" #persontype="ngModel" [(ngModel)]="person"><span style="font-size:18px;font-weight:400;text-transform:uppercase;color: rgba(224, 223, 223, 0.897);">&nbsp;&nbsp;Seeker</span></label>
+                        </div>
+                        <div style="margin:15px;">
+                            <label><input type="radio" name="person" value="learner" #persontype="ngModel" style="margin:5px;" [(ngModel)]="person"><span style=" font-size:18px;font-weight:400;text-transform:uppercase;color: rgba(224, 223, 223, 0.897); ">&nbsp;&nbsp;Learner</span></label>
+                        </div>
+                        <div style="margin:15px;">
+                            <label><input type="radio" name="person " value="tutor" #persontype="ngModel" style="margin:5px;" [(ngModel)]="person"><span style="font-size:18px;font-weight:400;text-transform:uppercase;color: rgba(224, 223, 223, 0.897);">&nbsp;&nbsp;Tutor</span></label>
+                        </div><br/>
+                        <br/>
+                        <div class="group">
+                            <label for={{tab}} class="button" style="text-align:center;padding:10px" (click)="onnext()">Next</label>
+                        </div>
+
+
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">Already a Member?</label>
+                        </div>
+                    </div>
+
+
+                    <div class="sign2-up-htm">
+
+                        <div class="group">
+                            <br/>
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input" name="uname" #username="ngModel" [(ngModel)]="uname" pattern="^[a-zA-Z_ ]{8,20}$" required>
+                            <div *ngIf="username.touched && username.invalid&& username.errors.required ">*Username is required</div>
+                            <div *ngIf="username.touched && username.invalid&& username.errors.pattern"> **May contain numbers,underscore,uppercase and lowercase letters and at least 8 or more characters. </div>
+                        </div>
+                        <div class="group">
+                            <label for="email" class="label">Email Address</label>
+                            <input id="email" type="text" class="input" name="email" #format="ngModel" [(ngModel)]="email" required pattern="^[a-zA-Z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$">
+                            <div *ngIf="format.touched && format.invalid&& format.errors.required ">*E-mail is required</div>
+                            <div *ngIf="format.touched && format.invalid&& format.errors.pattern"> *Must be in proper format </div>
+                        </div>
+                        <div class="group">
+                            <label for="number" class="label">Phone Number</label>
+                            <input id="number" type="text" class="input" name="phone" #phn="ngModel" [(ngModel)]="phone" required pattern="^((\\+91-?)|0)?[0-9]{10}$">
+                            <div *ngIf="phn.touched && phn.invalid && phn.errors.required ">*phone number required</div>
+                            <div *ngIf="phn.touched && phn.invalid && phn.errors.pattern ">*10 digit phone number required</div>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password" name="pass" #passwrd="ngModel" [(ngModel)]="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <div *ngIf="passwrd.touched && passwrd.invalid&& passwrd.errors.required ">*Password is required</div>
+                            <div *ngIf="passwrd.touched && passwrd.invalid&& passwrd.errors.pattern"> *Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.</div>
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Confirm Password</label>
+                            <input id="pass" type="password" class="input" data-type="password" name="cpass" #cpasswrd="ngModel" [(ngModel)]="cpass" required pattern="{{ passwrd.value }}">
+                            <div *ngIf="cpasswrd.touched && cpasswrd.invalid&& cpasswrd.errors.required ">*Confirm Password is required</div>
+                            <div *ngIf="cpasswrd.touched && cpasswrd.invalid&& cpasswrd.errors.pattern">*Password and confirm password must match</div>
+
+                        </div>
+                        <br/>
+                        <div>
+                            <input type="checkbox" name="terms" [(ngModel)]="terms">&nbsp;<span style="text-transform: uppercase; color: #aaa;font-weight:600;font-size:15px" required>I accept all terms and conditions</span>
+                        </div>
+                        <br/>
+                        <div class="group ">
+                            <input type="submit" class="button " value="Sign Up" (click)="onsignup(form1)">
+
+                        </div>
+                     
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

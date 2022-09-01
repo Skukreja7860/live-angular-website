@@ -1,0 +1,94 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Manage Course Videos</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Manage Course Videos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12"
+                style="width:100%;margin-top:3%">
+
+                <div class="course_subscribe">
+                    <form name="formsearch" enctype="multipart/form-data">
+                        <div class="group">
+                            <label for="pass" class="label"></label>
+                            <input type="text" id="pass" name="coursename" [(ngModel)]="coursename"
+                                placeholder="Course Name" required=" ">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label"></label>
+                            <input type="text" id="pass" name="headingname" [(ngModel)]="headingname" placeholder="Heading Name" required=" ">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label"></label>
+                            <input type="text" id="pass" name="coursepath" [(ngModel)]="coursepath" placeholder="Course Link" required=" ">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label"></label>
+                            <input type="text" id="pass" name="headingid" [(ngModel)]="headingid" placeholder="Heading Id" required=" ">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label"></label>
+                            <input type="text" id="pass" name="duration" [(ngModel)]="duration" placeholder="Video Duration" required=" ">
+                        </div>
+                        
+                        <div class="group ">
+                            <input type="submit" class="button" value="Add"
+                                style="background-color:skyblue;font-size:18px;font-weight:600;" (click)="onaddcv()">
+                        </div>
+                        
+                    </form> {{msg}}
+
+                </div>
+                 <div *ngIf="flag">
+                    <h2>Already Added Course Videos</h2><br>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Heading Id</th>
+                                <th>Heading Name</th>
+                                <th>Heading Path</th>
+                                <th>Video Duration</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let x of allvideos">
+                                <td>{{x.coursename}}</td>
+                                <td>{{x.headingid}}</td>
+                                <td>{{x.headingname}}</td>
+                                <td>{{x.coursepath}}</td>
+                                <td>{{x.duration}}</td>
+                               
+                                <td><button type="button" class="btn btn-danger"
+                                        (click)="onpathdel(x._id)">Delete</button></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

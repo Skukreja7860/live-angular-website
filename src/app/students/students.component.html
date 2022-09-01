@@ -1,0 +1,76 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Enrolled Students</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Enrolled Students</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12"
+                style="width:100% ;margin-top:3%">
+
+                <div class="course_subscribe">
+
+                    <div class="about">
+                        <div  class="container" style="margin:5% auto">
+                    
+                            {{msg}}
+                            <table *ngIf="flag" class="table table-bordered" >
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                    
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>Apply Date</th>
+                                        
+                                        <th>Country</th>
+                                        <th>State</th>
+                                        <th>Tutoring's Price/Hour</th>
+                                        <th>No. of Months</th>
+                                        <th>No. of hours for study</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let x of enroll">
+                                       
+                                        <td>{{x.name}}</td>
+                                        
+                                        <td>{{x.email}}</td>
+                                        <td>{{x.phone}}</td>
+                                        <td>{{x.applydate}}</td>
+                                        <td>{{x.country}}</td>
+                                        <td>{{x.state}}</td>
+                                        <td>{{x.rate}}</td>
+                                        <td>{{x.months}}</td>
+                                        <td>{{x.hours}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                        </div>
+                    </div>
+                    </div>
+
+
+
+                </div>
+                </div>
+                </div>
+                </div>
+        

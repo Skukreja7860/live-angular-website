@@ -1,0 +1,52 @@
+<div class="content_wrapper">
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Free Demo Sessions with Tutors</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Free Demo Sessions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" >
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;">
+
+
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Profile Picture</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone No</th>
+                            <th scope="col">Email Id</th>
+                            <th scope="col">Subject(s) for Tutoring</th>
+                            <th scope="col">Free Demo Session</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let x of allmembs">
+
+                            <td><img src="uploads/{{x.picture}}" height="75px" width="75px"></td>
+                            <td>{{x.name}}</td>
+                            <td>{{x.contact}}</td>
+                            <td>{{x.email}}</td>
+                            <td>{{x.subject}}</td>
+                            <td><button (click)="onclick(x._id)" >Book Your Free Trial</button></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+

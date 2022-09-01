@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "60dede6644ac5b1cb8f6cc82"
+  },
+  "name": "Alaxander Louise",
+  "email": "alaxander@gmail.com",
+  "gender": "male",
+  "contact": "8765432109",
+  "bio": "I hold a graduate and undergraduate degrees in Physics and Mathematics. I have over 15 years classroom teaching experience and over 5 years online tutoring experience with excellent student success. I believe that mathematics can be simplified to the level of a student for you to be able to learn and understand. I look forward to tutoring you and helping you make the grades you deserve.",
+  "qualification": "Masters in Physics and Mathematics",
+  "country": "Canda",
+  "state": "Alberta",
+  "dob": "1981-07-15",
+  "skills": "Algebra ,IB Physics ,Math, Physics",
+  "experience": "Physics Instructor-CSU-Aug 2016 - Present,\nPhysics Instructor-UNT-Sep 2009 - Aug 2015",
+  "picture": "1625237860605fal_alaxander_louise.jpg",
+  "address": "10, Downing Street",
+  "college": "University of North Texas",
+  "subject": "Physics and Mathematics",
+  "level": "College",
+  "group12": "50",
+  "group8": "60",
+  "one2one": "70"
+},{
+  "_id": {
+    "$oid": "60df170c5cbacd37b42aecc3"
+  },
+  "name": "Sarah Johnson",
+  "email": "sarah@gmail.com",
+  "gender": "female",
+  "contact": "9876543210",
+  "bio": "I am an experienced teacher who has worked not only in the United States but also in the Middle East.  I have a love for teaching and patience to help students through even the most challenging problem.",
+  "qualification": "M. Tech in Computer Science",
+  "country": "Australia",
+  "state": "Melbourne",
+  "dob": "1984-02-15",
+  "skills": "Html, CSS, JavaScript, PHP , WordPress , MERN Stack",
+  "experience": "Substitute Teacher-Kelly Educational Services-Apr 2019 - Jun 2019,\nSubstitute Teacher-Kelly Education Services-Oct 2018 - Dec 2018\n",
+  "picture": "1625233182959fal_sarah_johnson.jpg",
+  "address": "20, Downtown Valley",
+  "college": "Saint Joseph College",
+  "subject": "computer and Web Technology",
+  "level": "Middle and high",
+  "group12": "50",
+  "group8": "65",
+  "one2one": "72"
+},{
+  "_id": {
+    "$oid": "60df1e275cbacd37b42aecc4"
+  },
+  "name": "Jerry Moulton",
+  "email": "jerry@gmail.com",
+  "gender": "male",
+  "contact": "7654321890",
+  "bio": "Aloha! Your child will love working with me! I am a fun and energetic teacher who will give your student the confidence to succeed.",
+  "qualification": "Bachelors of Arts with Hons. English",
+  "country": "USA",
+  "state": "California",
+  "dob": "1994-06-24",
+  "skills": " Elementary Mathematics, Elementary Music, Elementary Science, Elementary Social Studies, Elementary Writing, English Essay Writing, Five Senses ,Fluency, Fractions, Grammar ,Handwriting, Health ,History, Humanities, Language Arts Letters and Words",
+  "experience": "Tutor-Varsity Tutors-Apr 2016 - Present,\nTutor-Chegg-Jul 2017 - Present,\nTutor-Wyzant-May 2020 - Present",
+  "picture": "1625234983569fal_jerry_moulton.jpg",
+  "address": "45, Apple Street",
+  "college": "Brigham Young University",
+  "subject": "English",
+  "level": "elementary",
+  "group12": "72",
+  "group8": "70",
+  "one2one": "68"
+}]

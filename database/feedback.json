@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "60dec7f4f4329c443ca02bc9"
+  },
+  "name": "Shilpa",
+  "rate": "4",
+  "email": "shilpa62001@gmail.com",
+  "suggestion": "Nothing want to say"
+},{
+  "_id": {
+    "$oid": "60dec82af4329c443ca02bcb"
+  },
+  "name": "tarun",
+  "rate": "5",
+  "email": "tarun@gmail.com",
+  "suggestion": "please provide more free courses."
+}]

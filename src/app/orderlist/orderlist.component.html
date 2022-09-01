@@ -1,0 +1,92 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Order List</h1>
+                <ul class="breadcrumbs">
+                    <li><a roterLink="/homepage">Home</a> /</li>
+                
+                    <li>Order List</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+    
+        <div class="container" style="height:280px;">
+    
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+    
+              
+    <div class="about">
+        <div class="container">
+           
+            {{msg}}
+            <table class="table table-bordered">
+               <thead> <tr>
+                    <th>Order ID</th>
+                    
+                    <th>Payment Mode</th>
+                    <th>Amount</th>
+                    <th>Order Date</th>
+                    <th>Username</th>
+                    <th>Status</th>
+                    <th>Update Status</th>
+                </tr></thead><tbody>
+                <tr *ngFor="let x of orderlist">
+                    <td><a routerLink="/orderdetails" [queryParams]="{oid:x._id}">{{x._id}}</a></td>
+                  
+                    <td>{{x.pmode}}</td>
+                    <td>{{x.billamt}}</td>
+                    <td>{{x.orderdate}}</td>
+                    <td>{{x.username}}</td>
+                    <td>{{x.status}}</td>
+                    <td><a routerLink="/updatestatus" [queryParams]="{oid:x._id}">Update</a></td>
+    
+                </tr></tbody>
+            </table>
+    
+        </div><br/><br/><br/><br/>
+        <h2>Enroll Free Courses</h2>
+        <hr /><br />
+        <div class="about">
+            <div class="container" style="margin:5% auto">
+        
+                {{msg2}}
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Course Picture</th>
+                            <th>Course Id</th>
+                            <th>Course Name</th>
+        
+                            <th>Enroll Date</th>
+                            <th>Status</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let x of enrolllist">
+        
+                            <td><img src="uploads/{{x.coursepic}}" height="100"></td>
+                            <td>{{x.courseid}}</td>
+                            <td>{{x.coursename}}</td>
+                            <td>{{x.enrolldate}}</td>
+                            <td>{{x.status}}</td>
+                            <td><a routerLink="/updatestatus2" [queryParams]="{cid:x.courseid}">Update</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+ 

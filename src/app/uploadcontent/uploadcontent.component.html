@@ -1,0 +1,72 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Uploaded Content</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Uploaded Content</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<div id="faculty_wrapper" class="faculty_wrapper">
+
+    <div class="container" style="height:280px;">
+
+        <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12"
+            style="width:70% ;margin-left:17%;margin-top:3%">
+
+            <div class="course_subscribe">
+                <form name="formsearch" enctype="multipart/form-data">
+                    <div class="group">
+                        <label for="pass" class="label"></label>
+                        <input type="text" id="pass" name="filename" [(ngModel)]="filename" placeholder="File Name"
+                            required=" ">
+                    </div>
+                    <div class="group">
+                        <input type="file" style="border:none" name="filedata" (change)="fileselected($event)">
+
+                    </div>
+                    <div class="group ">
+                        <input type="submit" class="button" value="Add"
+                            style="background-color:skyblue;font-size:18px;font-weight:600;" (click)="onfileadd()">
+                    </div>
+                </form> {{msg}}
+
+            </div>
+            <div *ngIf="flag">
+                <h2>Uploaded Content</h2><br>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Uploaded File</th>
+                            <th>Uploaded Filename</th>
+                           
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let x of allfiles">
+                            <td>{{x.filedata}}</td>
+                            <td>{{x.filename}}</td>
+                            
+                            <td><button type="button" class="btn btn-danger"(click)="onfiledel(x._id)">Delete</button>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

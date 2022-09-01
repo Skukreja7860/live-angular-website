@@ -1,0 +1,78 @@
+
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Update Course</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a> /</li>
+                    <li>Update Course</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="faculty_wrapper" class="faculty_wrapper">
+
+    <div class="container" style="height:280px;">
+
+        <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12"
+            style="width:50%; margin-left:27%;margin-top:3%">
+
+            <div class="course_subscribe">
+                <form name="formsearch" enctype="multipart/form-data">
+                    <div class="group" style="margin-bottom:20px">
+
+
+                        <input type="text" name="coursedataname" [(ngModel)]="coursedataname"
+                            required=" ">
+                    </div>
+                    <div class="group" style="margin-bottom:20px">
+                    
+                    
+                        <input type="text" name="coursedatarate" [(ngModel)]="coursedatarate" required=" ">
+                    </div>
+                    <div class="group" style="margin-bottom:20px">
+                    
+                    
+                        
+                    
+                    
+                        <input type="text" name="coursedatains" [(ngModel)]="coursedatains" required=" ">
+                    </div>
+                    <div class="group" style="margin-bottom:20px">
+                    
+                    
+                        <input type="text" name="coursedatacertificate" [(ngModel)]="coursedatacertificate" required=" ">
+                    </div>
+                    <div class="group" style="margin-bottom:20px">
+                    
+                    
+                        <input type="text" name="coursedataduration" [(ngModel)]="coursedataduration" required=" ">
+                    </div>
+                    <div class="group" style="margin-bottom:20px">
+                    
+                    
+                        <input type="text" name="coursedatalang" [(ngModel)]="coursedatalang" required=" ">
+                    </div>
+                    <div class="group">
+                        <img src="uploads/{{picname}}" height="80" width="100"><br><br>
+
+                        Choose new image, if required<br>
+
+                        <input type="file" name="coursedatapic" (change)="fileselected($event)">
+                    </div>
+
+                    <div class="group " style="margin-bottom:15px">
+                        <input type="submit" class="button" value="update"
+                            style="background-color:skyblue;font-size:18px;font-weight:600;" (click)="oncoursedataupdate()">
+                    </div>
+                </form> {{msg}}
+
+
+            </div>
+        </div>
+    </div>
+</div>

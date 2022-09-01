@@ -1,0 +1,56 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Order Details</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a> /</li>
+                    <li><a routerLink="/orderhistory">My Purchases</a>/</li>
+                    <li>Order Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+
+                <div class="course_subscribe" style="width:70%;margin-left:20%">
+                    <div class="products">
+                        <div class="container">
+                            
+                            {{msg}}
+                            <table *ngIf="flag" class="table table-bordered">
+                                <thead>
+                                <tr><th>Course Picture</th>
+                                    <th>Course Id</th>
+                                    <th>Course Name</th>
+                                   
+                                    <th>Course Rate</th>
+                                    
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let x of orderdet">
+                                    <td><img src="uploads/{{x.coursepic}}" height="100"></td>
+                                    <td>{{x.courseid}}</td>
+                                   
+                                    <td>{{x.coursename}}</td>
+                                    <td>{{x.courserate}}</td>
+                                   
+                                </tr></tbody>
+                            </table>
+                    
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>

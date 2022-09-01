@@ -1,0 +1,125 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Course Data</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a> /</li>
+                    <li>Course Data</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+
+                <div class="course_subscribe" style="width:50%;margin-left:27%">
+                    <form name="formsearch" enctype="multipart/form-data">
+                        <div class="group" style="margin-bottom:20px">
+
+
+                            <select name="category" [(ngModel)]="category" class="form-control"
+                                (change)="fetchallcoursedata()">
+                                <option value="">Choose Category</option>
+                                <option *ngFor="let x of allcoursecat" value="{{x._id}}">{{x.coursecategoryname}}</option>
+                            </select>
+                        </div>
+                        <div class="group" style="margin-bottom:20px"> <input type="text" name="coursedataname" [(ngModel)]="coursedataname"
+                                placeholder="Course Name" required=" "></div>
+                                <div class="group" style="margin-bottom:20px">
+                                
+                                
+                                    <input type="text" name="coursedatarate" [(ngModel)]="coursedatarate" placeholder="Course Rate"required=" ">
+                                </div>
+                                <div class="group" style="margin-bottom:20px">
+                                
+                                
+                                
+                                
+                                
+                                    <input type="text" name="coursedatains" [(ngModel)]="coursedatains" placeholder="Course Instructor"required=" ">
+                                </div>
+                                <div class="group" style="margin-bottom:20px">
+                                
+                                
+                                    <input type="text" name="coursedatacertificate" [(ngModel)]="coursedatacertificate" placeholder="Course Certificate"required=" ">
+                                </div>
+                                <div class="group" style="margin-bottom:20px">
+                                
+                                
+                                    <input type="text" name="coursedataduration" [(ngModel)]="coursedataduration" placeholder="Course Duration" required=" ">
+                                </div>
+                                <div class="group" style="margin-bottom:20px">
+                                
+                                
+                                    <input type="text" name="coursedatalang" [(ngModel)]="coursedatalang" placeholder="Course Language" required=" ">
+                                </div>
+                        <div class="group"> <input type="file" name="coursedatapic" style="border:none"
+                                (change)="fileselected($event)"></div>
+
+                        <div class="group " style="margin-bottom:15px">
+                            <input type="submit" class="button" value="Add"
+                                style="background-color:skyblue;font-size:18px;font-weight:600;"
+                                (click)="oncoursedataadd()">
+                        </div>
+                    </form> {{msg}}
+
+
+                </div>
+                <div *ngIf="flag">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Course Picture</th>
+                                <th>Course Name</th>
+                                <th>Course Rate</th>
+                                <th>Course Instructor</th>
+                                <th>Course Certificate</th>
+                                <th>Course Duration</th>
+                                <th>Course Language</th>
+
+                                <th>Update</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let x of coursedata">
+                                <td><img src="uploads/{{x.coursedatapic}}" height="100"> </td>
+                                <td>{{x.coursedataname}}</td>
+                                <td>{{x.coursedatarate}}</td>
+                                <td>{{x.coursedatains}}</td>
+                                <td>{{x.coursedatacertificate}}</td>
+                                <td>{{x.coursedataduration}}</td>
+                                <td>{{x.coursedatalang}}</td>
+                                <td><button type="button" class="btn btn-info" routerLink="/updatecourse"
+                                        [queryParams]="{cdid:x._id}">Update</button>
+                                </td>
+                                <td><button type="button" class="btn btn-danger"
+                                        (click)="oncoursedatadel(x._id)">Delete</button></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

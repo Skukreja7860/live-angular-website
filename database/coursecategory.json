@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "60dab772e2b8d71470474c1d"
+  },
+  "coursecategoryname": "Web Development Courses",
+  "coursecategorypic": "1625140651469web-development-course-in-panchkula.png"
+},{
+  "_id": {
+    "$oid": "60dab77fe2b8d71470474c1e"
+  },
+  "coursecategoryname": "Data Science Courses",
+  "coursecategorypic": "1625140688314data-science-course.jpg"
+}]

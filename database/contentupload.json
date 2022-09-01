@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "60e05363253f7563f0519bdf"
+  },
+  "tutorid": "60df170c5cbacd37b42aecc3",
+  "tutorname": "Sarah Johnson",
+  "tutorsubject": "computer and Web Technology",
+  "tutorpicture": "1625233182959fal_sarah_johnson.jpg",
+  "tutorqualification": "M. Tech in Computer Science",
+  "filename": "Automation and Robotics pdf",
+  "filedata": "1625314147240automation-and-robotics.pdf"
+}]

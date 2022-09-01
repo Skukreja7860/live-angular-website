@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "60e2feb9ef0e1165507a3af3"
+  },
+  "category": "60d72dc98fbde94c84a1a3df",
+  "subcatname": "The Story of My Life",
+  "subcatpic": "1625489081191The-Story-Of-My-Life.jpg"
+},{
+  "_id": {
+    "$oid": "60e2fed5ef0e1165507a3af4"
+  },
+  "category": "60d72dc98fbde94c84a1a3df",
+  "subcatname": "Automation and Robotics",
+  "subcatpic": "1625489109960robotics and automatic.png"
+},{
+  "_id": {
+    "$oid": "60e2ff15ef0e1165507a3af5"
+  },
+  "category": "60d72e0c8fbde94c84a1a3e1",
+  "subcatname": "Teaching Practices in Austrian & Finnish Primary Schools",
+  "subcatpic": "1625489225733download.png"
+},{
+  "_id": {
+    "$oid": "60e2ff3def0e1165507a3af6"
+  },
+  "category": "60d72e0c8fbde94c84a1a3e1",
+  "subcatname": "Teacher Classroom Practices and Student Performance",
+  "subcatpic": "1625489213061research2.jpg"
+}]

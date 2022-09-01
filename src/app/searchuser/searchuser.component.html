@@ -1,0 +1,56 @@
+<div class="content_wrapper">
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3" style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Search User</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Search User</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:50%; margin-left:27%;margin-top:3%">
+
+                <div class="course_subscribe">
+                    <form name-="formsearch" #formsearch="ngForm">
+                        <div class="group">
+                            <label for="pass" class="label"></label>
+                            <input class="form-control" id="pass" type="text" class="input" name="email" placeholder="Enter your email address" [(ngModel)]="email">
+
+                        </div>
+                        <div class="group ">
+                            <input type="submit" class="button" value="Search" style="background-color:skyblue;font-size:18px;font-weight:600;" (click)="onsearch(formsearch)">
+                        </div>
+                    </form> {{msg}}
+                    <br/>
+                    <div *ngIf="flag">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone No</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>{{name}}</td>
+                                    <td>{{phone}}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

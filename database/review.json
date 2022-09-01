@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "60ddb2ddc3f9ca110080875e"
+  },
+  "courseid": "60dabb369f1de8568037409c",
+  "coursename": "Elementary Vedic Maths Course",
+  "name": "Shilpa",
+  "email": "shilpa62001@gmail.com",
+  "comment": "This course is really amazing. I have learn lot of skills.  "
+},{
+  "_id": {
+    "$oid": "60ddb302c3f9ca110080875f"
+  },
+  "courseid": "60dabb369f1de8568037409c",
+  "coursename": "Elementary Vedic Maths Course",
+  "name": "Tarun",
+  "email": "tarun@gmail.com",
+  "comment": "Love this course."
+},{
+  "_id": {
+    "$oid": "60e07ee6253f7563f0519be0"
+  },
+  "courseid": "60dab7d7e2b8d71470474c1f",
+  "coursename": "Mean Stack",
+  "name": "simran",
+  "email": "simran@gmail.com",
+  "comment": "very good."
+}]

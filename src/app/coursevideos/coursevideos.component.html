@@ -1,0 +1,88 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Mean Stack</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a> /</li>
+                    <li>Mean Stack</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dtl_wrap" class="dtl_wrap">
+
+        <div class="container">
+
+            <div class="dtl_wrapper col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin:0px 20px 0px 20px">
+
+                <div class="dtl_inner_wrap">
+
+                    <div>
+                        <div class="dtl_head">
+                            <h1>Mean Stack</h1>
+
+                        </div>
+                        <div class="dtl_block">
+                            <div class="dtl_img">
+                                <img src="images/mean.png" height="500px">
+                            </div>
+                            <div class="detail_text_wrap">
+                                <div class="info_wrapper">
+                                    <div class="info_head" >
+                                        <h4>Course Videos </h4>
+                                     <div style="font-size:15px" *ngFor="let x of allvideos">   <span ><i class="fa fa-youtube-play" aria-hidden="true"></i></span><span><i>&nbsp;&nbsp;&nbsp;{{x.headingname}}</i></span><span style="color:red"> &nbsp;&nbsp;DURATION : {{x.duration}}</span><br/>                                        <!-- <span>Video 2:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 2] - Express Setup & Routes</i></span><span
+                                             style="color:red"> &nbsp;&nbsp;DURATION : 25 minutes</span><br /><br />
+
+                                        <span>Video 3:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 3] - User Model & Register</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 16 minutes</span><br /><br />
+
+                                        <span>Video 4:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 4] - API Authentication and Token</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 24 minutes</span><br /><br />
+                                        <span>Video 5:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 5] - Angular 2 Components & Routes</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 22 minutes</span><br /><br />
+                                        <span>Video 6:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 6] - Register Component, Validation & Flash Messages</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 20 minutes</span><br /><br />
+                                        <span>Video 7:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 7] - Auth Service & User Registration</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 12 minutes</span><br /><br />
+                                        <span>Video 8:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 8] - Login & Logout</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 20 minutes</span><br /><br />
+                                        <span>Video 9:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 9] - Protected Requests & Auth Guard</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 24 minutes</span><br /><br />
+                                        <span>Video 10:</span><span><i>&nbsp;&nbsp;&nbsp;MEAN Stack Front To Back [Part 10] - App Deployment to Heroku</i></span><span
+                                            style="color:red"> &nbsp;&nbsp;DURATION : 17 minutes</span><br /><br /> -->
+                                        <br/></div>
+                                        <button (click)="startcourse()">Start Course</button></div>
+                                    
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                </div>
+
+
+                
+
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    
+    
+</div>

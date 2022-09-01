@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "60ddd2aec3f9ca1100808760"
+  },
+  "name": "Shilpa Kukreja",
+  "email": "shilpa@gmail.com",
+  "gender": "female",
+  "contact": "9877494098",
+  "bio": "I love to do drawing .",
+  "qualification": "Graduation",
+  "country": "India",
+  "state": "Punjab",
+  "dob": "2001-02-06",
+  "picture": "1625150321690shilpa.jpg",
+  "address": "10/3A,shaheed baba deep singh nagar",
+  "college": "kanya maha vidyalaya"
+},{
+  "_id": {
+    "$oid": "60deb4546b5ec16f7ce6a5d2"
+  },
+  "name": "Simranpreet kaur",
+  "email": "simrankaur@gmail.com",
+  "gender": "female",
+  "contact": "6543218902",
+  "bio": "hgjj",
+  "qualification": "vhj",
+  "country": "ghj",
+  "state": "undefined",
+  "dob": "undefined",
+  "picture": "1625207913656The-Story-Of-My-Life.jpg",
+  "address": "dgh",
+  "college": "kanya maha vidyalaya"
+}]

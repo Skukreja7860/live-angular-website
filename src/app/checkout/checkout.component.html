@@ -1,0 +1,123 @@
+
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>CheckOut</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a> /</li>
+                    <li><a routerLink="/addtocart">Courses in Cart</a>/</li>
+                    <li>CheckOut</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+    
+        <div class="container" style="height:280px;">
+    
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+    
+                <div class="course_subscribe" style="width:50%;margin-left:27%">
+    <form name="form1">
+        <select name="country" [(ngModel)]="country" class="form-control" 
+    >
+    <option value="" disabled="">Please select...</option>
+    <option value="IN">India</option>
+        </select><br/>
+        <select name="state" [(ngModel)]="state" class="form-control">
+            <option value="" >Please select state....</option>
+            <option>Andaman and Nicobar Islands</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chandigarh</option>
+            <option>Chhattisgarh</option>
+            <option>Dadra and Nagar Haveli</option>
+            <option>Daman and Diu</option>
+            <option>Delhi</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jammu and Kashmir</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Ladakh</option>
+            <option>Lakshadweep</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Puducherry</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option>
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttar Pradesh</option>
+            <option>Uttarakhand</option>
+            <option>West Bengal</option>
+        </select><br/>
+         
+        <select name="poption" [(ngModel)]="poption" class="form-control" style="padding:0px 5px 0px 10px" (change)="onpmode()"><br />
+            <option value="">Choose Payment Option</option>
+            <option>Pay with Netbanking</option>
+            <option>Credit Card / Debit Card</option>
+        </select><br />
+        <div *ngIf="flag">
+            <input type="text" name="cardno" [(ngModel)]="cardno" placeholder="Card Number" class="form-control">
+            <input type="text" name="hname" [(ngModel)]="hname" placeholder="Holder Name" class="form-control">
+            <select name="coname" [(ngModel)]="coname" class="form-control" style="padding:0px 5px 0px 10px">
+                <option value="">Choose Company Name</option>
+                <option>Master Card</option>
+                <option>VISA</option>
+                <option>RuPay</option>
+            </select>
+            <input type="text" name="exp" [(ngModel)]="exp" placeholder="Expiry" class="form-control">
+            <input type="password" name="cvv" [(ngModel)]="cvv" placeholder="CVV" class="form-control">
+        </div>
+        <div *ngIf="flag2">
+            <div>In order to complete your transaction, we will transfer you to official website.
+            
+            Select your bank from the drop-down list and click make payement to continue with your payment.</div><br/>
+            <select name="bank" [(ngModel)]="bank" class="form-control">
+                <option value="" >Please choose one</option>
+                <option>Allahabad Bank </option>
+                <option>Andhra Pragathi Grameena Bank</option>
+                <option>AU Small Finance Bank</option>
+                <option>Axis Bank </option>
+               
+    
+            </select><br/>
+        </div>
+        
+        <input type="submit" name="b1" (click)="onpayment()" style="background-color:lightskyblue" value="Make Payment">
+    </form>
+    <br>
+    {{msg}}</div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container" style="margin-bottom:10px">
+        <ul class="progressbar">
+            <li class="active"><i class="fa fa-laptop"></i>&nbsp;Select Course</li>
+            <li class="active"><i class="fa fa-cart-plus"></i>&nbsp;Add to Cart</li>
+            <li class="active"><i class="fa fa-clipboard"></i>&nbsp;Fill Details & <i class="fa fa-money"></i>&nbsp; Make Payment</li>
+            <li><i class="fa fa-laptop"></i>&nbsp;Access Course</li>
+        </ul>
+    </div>
+    </div>
+    

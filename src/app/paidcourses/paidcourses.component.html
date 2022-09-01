@@ -1,0 +1,51 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Popular Courses</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Paid Courses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1
+        style="font-size:50px;font-weight:500;font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:whitesmoke;padding:7px;text-align:center">
+        PAID COURSES</h1>
+
+    <div class="about">
+        <div class="container" style="margin:5%">
+    
+    
+            <div class="agile_top_brands_grids" *ngIf="flag">
+                <div class="col-md-3 top_brand_left-1" style="width:30%" *ngFor="let x of allcoursecat">
+                    <div class="hover14 column">
+                        <div class="agile_top_brand_left_grid">
+                            <div class="agile_top_brand_left_grid1">
+                                <figure>
+                                    <div class="snipcart-item block">
+                                        <div class="snipcart-thumb"
+                                            style="border:2px solid black;text-align:center;padding-top:20px">
+                                             <a routerLink="/subcategorypaid" [queryParams]="{catid:x._id}">
+                                                <img height="200"
+                                                    width="300" src="uploads/{{x.coursecategorypic}}">
+                                                <p
+                                                    style="font-size:18px;color:black;
+                                                padding:10px;font-weight:600;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;background-color:darkorange">
+                                                    {{x.coursecategoryname}}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{msg}}
+        </div>
+    </div>
+    </div>

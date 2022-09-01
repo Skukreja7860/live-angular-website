@@ -1,0 +1,39 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/instructor.png) no-repeat; background-attachment: fixed; background-position: top left; background-size: cover;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Our Tutors</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Find A Tutor /</li>
+                    <li>Middle and High School Tutors</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper_faculty" style="background-color:whitesmoke;margin-top:5%;margin-bottom:5%">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding-top:40px;margin:4%"
+            *ngFor="let x of tutordata1">
+            <div class="faculty_block">
+                <div class="img_wrap">
+                    <img alt="Alaxander Louise" src="uploads/{{x.picture}}">
+                    <div class="faculty_img_hoverlay_btn"><a routerLink="/teacherdetail" [queryParams]="{tid:x._id}"
+                            title="View Profile" class="btn btn_glob">View Profile</a></div>
+
+                </div>
+                <div class="science">
+                    <div class="faculty_info">
+                        <h4>{{x.name}}</h4>
+                        <h3>{{x.email}}</h3>
+                        <p style="height:35px">{{x.subject}}&nbsp;Teacher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+

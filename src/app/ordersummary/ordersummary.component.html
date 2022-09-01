@@ -1,0 +1,46 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Order Summary</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/Paid">Paid Courses</a> /</li>
+                    <li><a routerLink="/addtocart">Courses in Cart</a> /</li>
+                    <li><a routerLink="/checkout">CheckOut</a> /</li>
+                    <li>Order Summary</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+
+                <div class="course_subscribe" style="width:60%;margin-left:22%">
+<div class="about">
+    <div class="container" >
+        
+        Thanks for shopping on our website.<br>
+        Your email id is {{cartitems[0].username}}<br>
+        Your order number is {{orderdetails[0]._id}}<br>
+        Your bill amount {{orderdetails[0].billamt}}<br>
+        your order date is {{orderdetails[0].orderdate}}<br><br>
+        <h5>If you want to access the course then click the "STATUS" button.</h5><br/><br/>
+       <button (click)="checkstatus()">Status</button><br/><br/>
+       <h6 style="color:red">(*If the status is done,you can simply click on status to access the course.)</h6>
+        <br>
+        {{msg}}
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

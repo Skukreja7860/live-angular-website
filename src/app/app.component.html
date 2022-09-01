@@ -1,0 +1,28 @@
+<div [ngSwitch]="utype">
+    <div *ngSwitchCase="'learner'">
+        <app-learnerheader></app-learnerheader>
+    </div>
+    <div *ngSwitchCase="'seeker'">
+        <app-seekerheader></app-seekerheader>
+    </div>
+    <div *ngSwitchCase="'tutor'">
+        <app-tutorheader></app-tutorheader>
+    </div>
+    <div *ngSwitchCase="'admin'">
+        <app-adminheader></app-adminheader>
+    </div>
+    <div *ngSwitchCase="">
+        <app-header></app-header>
+    </div>
+    <div *ngSwitchDefault>
+        <app-header></app-header>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+<!--footer-->
+
+<app-footer></app-footer>

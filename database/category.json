@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "60d72dc98fbde94c84a1a3df"
+  },
+  "categoryname": "E-books",
+  "categorypic": "1624714697226ebooks.jpg"
+},{
+  "_id": {
+    "$oid": "60d72e008fbde94c84a1a3e0"
+  },
+  "categoryname": "Motivational Videos",
+  "categorypic": "1624714752965motivation.jfif"
+},{
+  "_id": {
+    "$oid": "60d72e0c8fbde94c84a1a3e1"
+  },
+  "categoryname": "Research Articles",
+  "categorypic": "1624714764757research.jpg"
+}]

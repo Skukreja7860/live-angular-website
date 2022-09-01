@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "60e3b13b6fc6862d80fb7f78"
+  },
+  "courseid": "60dabaea9f1de8568037409b",
+  "coursename": "CAD/CAM Course",
+  "coursepic": "1624947434029cad_cam.jfif",
+  "name": "Simranpreet kaur",
+  "email": "simrankaur@gmail.com",
+  "phone": "6543218902",
+  "enrolldate": "Tue Jul 06 2021 06:55:56 GMT+0530 (India Standard Time)",
+  "status": "Waiting"
+}]

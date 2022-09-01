@@ -1,0 +1,71 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Courses in Cart</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a> /</li>
+                    <li>Courses in Cart</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<div class="about">
+
+    <div class="container" style="margin:5% auto">
+        <div *ngIf="flag">
+            <table class="table table-bordered" style="margin-top:5%">
+                <thead>
+                    <tr>
+                        <th scope="col">Course Id</th>
+                        <th scope="col">Cousre Picture</th>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Course Rate</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let x of cartdata"> 
+                       <td>{{x.courseid}}</td>
+                        <td><img src="uploads/{{x.coursepic}}" height="75"></td>
+                        <td>{{x.coursename}}</td>
+                        
+                            <td>{{x.username}}</td>
+                            <td>{{x.courserate}}</td>
+                            <td><button (click)="oncatdel(x._id)">Delete</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+            
+           <br/>
+            <h5>Your bill amount is Rs.{{gtotal}}/-</h5><br /><br />
+<h4>You can either checkout or continue your shopping</h4>
+            <button type="submit" class="button continue" style="margin-right:10px;margin-top:2%;margin-bottom:10%"
+                (click)="oncheckout()"><a routerLink="/checkout" style="color:white">CheckOut</a></button>
+            <button type="submit" class="button continue" style="margin-top:2%;margin-bottom:10%"><a
+                    routerLink="/paid" style="color:white">Continue Shopping</a></button>
+
+
+            <div class="container" style="margin-bottom:10px">
+                <ul class="progressbar">
+                    <li class="active"><i class="fa fa-laptop"></i>&nbsp;Select Course</li>
+                    <li class="active"><i class="fa fa-cart-plus"></i>&nbsp;Add to Cart</li>
+                    <li><i class="fa fa-clipboard"></i>&nbsp;Fill Details & <i class="fa fa-money"></i>&nbsp; Make Payment</li>
+                    <li><i class="fa fa-laptop"></i>&nbsp;Access Course</li>
+                </ul>
+            </div>
+            
+           
+         
+        </div>
+        {{msg}}
+    </div>
+</div>
+</div>
+

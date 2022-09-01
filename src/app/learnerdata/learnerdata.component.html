@@ -1,0 +1,78 @@
+<div class="container bootstrap snippets bootdey"
+    style="background-color:black;margin-top:50px;margin-bottom:50px;border-radius:10px">
+    <div class="row" style="margin-left:20%">
+        <div class="profile-nav col-md-3" style="margin-left:-17%">
+            <div class="panel" width="50px">
+                <div class="user-heading round">
+                    <a routerLink="/learnerdata">
+                        <img src="uploads/{{learnerdata[0].picture}}">
+                    </a>
+                    <h1>{{learnerdata[0].name}}</h1>
+                    <p>{{learnerdata[0].email}}</p>
+                </div>
+
+                <ul class="nav nav-pills nav-stacked" style="display:block">
+                    <li class="active"><a routerLink="/learnerprofile"><i class="fa fa-user"></i> Profile</a></li>
+
+                    <li><a routerLink="/learneredit"> <i class="fa fa-edit"></i>Create profile</a></li>
+                    <li><a routerLink="/learnerupdate"> <i class="fa fa-edit"></i> Update profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile-info col-md-9">
+
+
+            <div class="panel" style="width:110%;">
+                <div class="panel-body bio-graph-info">
+                    <h1 style="font-size:22px;font-weight:600;font-family:Verdana, Geneva, Tahoma, sans-serif">User
+                        Profile</h1>
+                    <div class="row">
+                        <div class="bio-row">
+                            <p><span>Name </span>: <span style="width:400px">{{learnerdata[0].name}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Gender </span>: <span style="width:400px">{{learnerdata[0].gender}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Date of Birth </span>: <span style="width:400px">{{learnerdata[0].dob}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Email </span>: <span style="width:400px">{{learnerdata[0].email}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>College/University Name </span>: <span
+                                    style="width:400px">{{learnerdata[0].college}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Highest Qualification </span>: <span
+                                    style="width:400px">{{learnerdata[0].qualification}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Mobile </span>: <span style="width:400px">{{learnerdata[0].contact}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Country </span>: <span style="width:400px">{{learnerdata[0].country}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>State </span>: <span style="width:400px">{{learnerdata[0].state}}</span></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Permanent Address </span>: <span
+                                    style="width:400px">{{learnerdata[0].address}}</span></p>
+                        </div>
+
+
+                        <div class="bio-row">
+                            <p><span>About </span>: <span style="width:400px">{{learnerdata[0].bio}}</span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

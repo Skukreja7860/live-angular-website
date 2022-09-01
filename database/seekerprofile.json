@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "60d34a0f370c282f80cc624b"
+  },
+  "name": "jasskiran kaur",
+  "email": "jskaur@gmail.com",
+  "gender": "female",
+  "contact": "7865432190",
+  "bio": "Dog Lover",
+  "qualification": "senior secondary",
+  "country": "India",
+  "state": "Punjab",
+  "dob": "2001-12-12",
+  "picture": "162445979189118df0458-2b46-41ee-b38d-7e3606ef0742.jpg",
+  "address": "10/3A,shaheed baba deep singh nagar",
+  "college": "DAV College"
+}]

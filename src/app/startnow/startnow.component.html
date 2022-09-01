@@ -1,0 +1,174 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Start Learning with Tutor</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Find A Tutor /</li>
+                    <li>Teacher's Details /</li>
+                    <li>Start Learning with Tutor</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+
+                <div class="course_subscribe" style="width:50%;margin-left:27%">
+                    <h2>Enter Your Details <h6 style="color:red">(* Details must be same as you enter during signup and profile.)</h6></h2>
+                <br/>    <form name="form1">
+                        <input type="text" placeholder="Enter name" class="form-control" name="name" [(ngModel)]="name">
+                        <input type="text" placeholder="Enter email" class="form-control" name="email" [(ngModel)]="email">
+                        <input type="text" placeholder="Enter phone no" class="form-control" name="phone" [(ngModel)]="phone">
+                        <select name="country" [(ngModel)]="country" class="form-control">
+                            <option value="" disabled="">Please select...</option>
+                            <option value="India">India</option>
+                        </select><br />
+                        <select name="state" [(ngModel)]="state" class="form-control">
+                            <option value="">Please select state....</option>
+                            <option>Andaman and Nicobar Islands</option>
+                            <option >Andhra Pradesh</option>
+                            <option >Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chandigarh</option>
+                            <option>Chhattisgarh</option>
+                            <option>Dadra and Nagar Haveli</option>
+                            <option>Daman and Diu</option>
+                            <option>Delhi</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jammu and Kashmir</option>
+                            <option>Jharkhand</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Ladakh</option>
+                            <option>Lakshadweep</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Puducherry</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>
+                        </select><br />
+                        <select name="mode" [(ngModel)]="rate" class="form-control"
+                            style="padding:0px 5px 0px 10px" ><br />
+                            <option value=0>Choose mode of study</option>
+                            <option value={{tutordetails[0].one2one}}>One to One Interaction</option>
+                            <option value={{tutordetails[0].group8}}>Group Study with 8 students</option>
+                            <option value={{tutordetails[0].group12}}>Group Study with 12 students</option>
+                        </select>
+                        <input type="text" placeholder="For how many hours do you want to study?" class="form-control" name="hours" [(ngModel)]="hours">
+                        <input type="text" placeholder="For how many months do you want to study?" class="form-control" name="months"
+                            [(ngModel)]="months">
+                        <select name="poption" [(ngModel)]="poption" class="form-control"
+                            style="padding:0px 5px 0px 10px" (change)="onpmode()"><br />
+                            <option value="">Choose Payment Option</option>
+                            <option>Pay with Netbanking</option>
+                            <option>Credit Card / Debit Card</option>
+                        </select><br />
+                        <div *ngIf="flag">
+                            <input type="text" name="cardno" [(ngModel)]="cardno" placeholder="Card Number"
+                                class="form-control">
+                            <input type="text" name="hname" [(ngModel)]="hname" placeholder="Holder Name"
+                                class="form-control">
+                            <select name="coname" [(ngModel)]="coname" class="form-control"
+                                style="padding:0px 5px 0px 10px">
+                                <option value="">Choose Company Name</option>
+                                <option>Master Card</option>
+                                <option>VISA</option>
+                                <option>RuPay</option>
+                            </select>
+                            <input type="text" name="exp" [(ngModel)]="exp" placeholder="Expiry" class="form-control">
+                            <input type="password" name="cvv" [(ngModel)]="cvv" placeholder="CVV" class="form-control">
+                        </div>
+                        <div *ngIf="flag2">
+                            <div>In order to complete your transaction, we will transfer you to official website.
+
+                                Select your bank from the drop-down list and click make payement to continue with your
+                                payment.</div><br />
+                            <select name="bank" [(ngModel)]="bank" class="form-control">
+                                <option value="">Please choose one</option>
+                                <option>Allahabad Bank </option>
+                                <option>Andhra Pragathi Grameena Bank</option>
+                                <option>AU Small Finance Bank</option>
+                                <option>Axis Bank </option>
+                                <option>Bandhan bank</option>
+                                <option>Bank of Bahrain and Kuwait</option>
+                                <option>Bank of Baroda - Retail Banking</option>
+                                <option>Bank of Maharashtra</option>
+                                <option>Canara Bank</option>
+                                <option>Canara Bank (e-Syndicate)</option>
+                                <option>Catholic Syrian Bank</option>
+                                <option>Central Bank of India</option>
+                                <option>City Union Bank</option>
+                                <option>Cosmos Bank</option>
+                                <option>Dena Bank</option>
+                                <option>Deutsche Bank</option>
+                                <option>Development Credit Bank</option>
+                                <option>Dhanlakshmi Bank - Retail Net Banking</option>
+                                <option>digibank by DBS</option>
+                                <option>Equitas Small Finance Bank</option>
+                                <option>ESAF Small Finance Bank</option>
+                                <option>Federal Bank</option>
+                                <option>Fincare Bank</option>
+                                <option>HDFC Bank</option>
+                                <option>ICICI Bank </option>
+                                <option>IDBI Bank - Retail Net Banking</option>
+                                <option>IDFC FIRST Bank</option>
+                                <option>Indian Bank</option>
+                                <option>Indian Overseas Bank</option>
+                                <option>IndusInd Bank</option>
+                                <option>Jammu &amp; Kashmir Bank</option>
+                                <option>Jana Small Finance Bank</option>
+                                <option>Janata Sahakari Bank Ltd Pune</option>
+                                <option>Kalyan Janata Sahakari Bank</option>
+                                <option>Karnataka Bank Ltd</option>
+                                <option>Karnataka Vikas Grameena Bank</option>
+                                <option>Karur Vysya Bank</option>
+                                <option>Kotak Bank</option>
+                                <option>Laxmi Vilas Bank - Retail</option>
+                                <option>NKGSB Co-op Bank</option>
+                                <option>North East Small Finance Bank</option>
+                                <option>PNB (Erstwhile-Oriental Bank of Commerce)</option>
+                                <option>PNB (Erstwhile-United Bank of India)</option>
+                                <option>Punjab &amp; Maharastra Co-op Bank</option>
+                                <option>Punjab &amp; Sind Bank</option>
+                                <option>Punjab National Bank - Retail Banking</option>
+                                <option>RBL Bank Limited</option>
+                            </select><br />
+                        </div>
+
+                        <input type="submit" name="b1" (click)="onpayment()" style="background-color:lightskyblue"
+                            value="Make Payment">
+                    </form>
+                    <br>
+                    {{msg}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

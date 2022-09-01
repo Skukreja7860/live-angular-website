@@ -1,0 +1,81 @@
+<div class="content_wrapper">
+
+<div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+    style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+    <div class="breadcrumb_wrap_inner">
+        <div class="container">
+            <h1>Study Material</h1>
+            <ul class="breadcrumbs">
+                <li><a routerLink="/homepage">Home</a> /</li>
+                <li><a routerLink="/studymaterial">Study Material</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="container" style="margin:5%">
+
+
+        <div class="agile_top_brands_grids" *ngIf="flag">
+            <div class="col-md-3 top_brand_left-1" *ngFor="let x of allcat">
+                <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid">
+                        <div class="agile_top_brand_left_grid1">
+                            <figure>
+                                <div class="snipcart-item block">
+                                    <div class="snipcart-thumb" style="border:2px solid black;text-align:center;padding-top:20px">
+                                        <a routerLink="/smaterialdata" [queryParams]="{catid:x._id}"><img height="180" width="200" src="uploads/{{x.categorypic}}">
+                                            <p style="font-size:18px;color:black;
+                                            padding:10px;font-weight:600;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">{{x.categoryname}}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{msg}}
+    </div>
+</div>
+<br>
+<br>
+<h1 style="background-color:darkorange;text-align:center">CONTENT UPLOADED BY TUTORS<hr/></h1>
+<div *ngIf="flag" style="width:90%;margin:4% auto">
+    
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tutor Picture</th>
+                <th>Tutor Name</th>
+                
+                <th>Tutoring Subject</th>
+                <th>Tutor Qualification</th>
+                
+                <th>Uploaded Filename</th>
+<th>Uploaded File</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let x of allfiles">
+              
+                <td><img src="uploads/{{x.tutorpicture}}" height="100"></td>
+                <td>{{x.tutorname}}</td>
+                <td>{{x.tutorsubject}}</td>
+                <td>{{x.tutorqualification}}</td>
+                
+                <td>{{x.filename}}</td>
+<td><a href="../../uploads/{{x.filedata}}">{{x.filedata}}</a></td>
+              
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+

@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "60c17dcf080fbd25201fb855"
+  },
+  "person": "learner",
+  "phone": "9877494098",
+  "uname": "Shilpa Kukreja",
+  "pass": "Shilpa123",
+  "email": "shilpa@gmail.com"
+},{
+  "_id": {
+    "$oid": "60c17e22080fbd25201fb856"
+  },
+  "person": "admin",
+  "phone": "9876525929",
+  "uname": "Tarun Kumar",
+  "pass": "Tarun123",
+  "email": "tarun@gmail.com"
+},{
+  "_id": {
+    "$oid": "60c4b09eb484913bac467e63"
+  },
+  "person": "learner",
+  "phone": "6543218902",
+  "uname": "Simranpreet kaur",
+  "pass": "Simran123",
+  "email": "simrankaur@gmail.com"
+},{
+  "_id": {
+    "$oid": "60c8a663d36ade3bb077c1bd"
+  },
+  "person": "learner",
+  "phone": "8765432190",
+  "uname": "Anita kukreja",
+  "pass": "Anita123",
+  "email": "anita@gmail.com"
+},{
+  "_id": {
+    "$oid": "60c8a955d36ade3bb077c1be"
+  },
+  "person": "seeker",
+  "phone": "9876543210",
+  "uname": "Vinay kumar",
+  "pass": "Vinay123",
+  "email": "vinay@gmail.com"
+},{
+  "_id": {
+    "$oid": "60cad0580998e4022c4840e6"
+  },
+  "person": "tutor",
+  "phone": "8765432109",
+  "uname": "Alaxander Louise",
+  "pass": "Alaxander123",
+  "email": "alaxander@gmail.com"
+},{
+  "_id": {
+    "$oid": "60cad0ad0998e4022c4840e7"
+  },
+  "person": "tutor",
+  "phone": "9876543210",
+  "uname": "Sarah Johnson",
+  "pass": "Sarah123",
+  "email": "sarah@gmail.com"
+},{
+  "_id": {
+    "$oid": "60cad7b00998e4022c4840ec"
+  },
+  "person": "seeker",
+  "phone": "7865432190",
+  "uname": "jasskiran kaur",
+  "pass": "Jasskiran123",
+  "email": "jskaur@gmail.com"
+}]

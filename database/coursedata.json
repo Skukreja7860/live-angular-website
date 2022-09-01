@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "60dab7d7e2b8d71470474c1f"
+  },
+  "category": "60dab772e2b8d71470474c1d",
+  "coursedataname": "Mean Stack",
+  "coursedatarate": "Rs. 6500.00",
+  "coursedatains": "Dr. Ravi Khurana",
+  "coursedatalang": "English",
+  "coursedatacertificate": "Certificate Course",
+  "coursedatapic": "1624947200156mean.png",
+  "coursedataduration": "2 Months"
+},{
+  "_id": {
+    "$oid": "60daba609f1de8568037409a"
+  },
+  "category": "60dab77fe2b8d71470474c1e",
+  "coursedataname": "Data Science Course",
+  "coursedatarate": "Rs. 7200.00",
+  "coursedatains": "Mr. Nitin Khanna",
+  "coursedatalang": "English",
+  "coursedatacertificate": "Certificate Course",
+  "coursedataduration": "2.5 Months",
+  "coursedatapic": "1624947296790datascience.jpg"
+},{
+  "_id": {
+    "$oid": "60dabaea9f1de8568037409b"
+  },
+  "category": "",
+  "coursedataname": "CAD/CAM Course",
+  "coursedatarate": "Free",
+  "coursedatains": "Dr. Suman  Khurana",
+  "coursedatalang": "English",
+  "coursedatacertificate": "No Certificate",
+  "coursedataduration": "1.5 Months",
+  "coursedatapic": "1624947434029cad_cam.jfif"
+},{
+  "_id": {
+    "$oid": "60dabb369f1de8568037409c"
+  },
+  "category": "",
+  "coursedataname": "Elementary Vedic Maths Course",
+  "coursedatarate": "Free",
+  "coursedatains": "Mr. Nitin Khanna",
+  "coursedatalang": "English",
+  "coursedatacertificate": "No Certificate",
+  "coursedataduration": "1 Month",
+  "coursedatapic": "1624947510820veidcmaths.jfif"
+}]

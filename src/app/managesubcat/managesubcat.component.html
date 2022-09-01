@@ -1,0 +1,72 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Manage Sub Category</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a> /</li>
+                    <li>Manage  Sub Category</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12"
+               style="width:50%; margin-left:27%;margin-top:3%">
+                <div class="course_subscribe">
+                    <form name="formsearch" enctype="multipart/form-data">
+                        <div class="group" >                        
+                      
+                            <select name="category" [(ngModel)]="category" class="form-control" (change)="fetchallsubcat()">
+                                <option value="">Choose Category</option>
+                                <option *ngFor="let x of allcat" value="{{x._id}}">{{x.categoryname}}</option>
+                            </select></div>
+                           <div class="group"> <input type="text" name="subcatname" [(ngModel)]="subcatname" placeholder="Sub Category Name" required=" "></div>
+                            <div class="group"> <input type="file" name="subcatpic" style="border:none" (change)="fileselected($event)"></div>
+                            
+                        <div class="group "  style="margin-bottom:15px">
+                            <input type="submit" class="button" value="Add"
+                                style="background-color:skyblue;font-size:18px;font-weight:600;" (click)="onsubcatadd()">
+                        </div>
+                    </form> {{msg}}
+
+                
+            </div>
+            <div *ngIf="flag">
+            <table class="table">
+                <thead class="thead-dark">
+            <tr>
+               <th>Sub Category pic</th>
+                <th>Name</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let x of subcat">
+            <td><img src="uploads/{{x.subcatpic}}" height="100"></td>
+                <td>{{x.subcatname}}</td>
+                <td><button type="button" class="btn btn-info" routerLink="/updatesubcat" [queryParams]="{scid:x._id}">Update</button>
+                </td>
+                <td><button type="button" class="btn btn-danger" (click)="onsubcatdel(x._id)">Delete</button></td>
+            
+            </tr>
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

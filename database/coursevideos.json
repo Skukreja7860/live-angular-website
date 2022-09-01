@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "60e31f06a5c38140b4cb2a76"
+  },
+  "duration": "13 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 1] - Project Introduction",
+  "headingid": "MS1",
+  "coursepath": "uONz0lEWft0"
+},{
+  "_id": {
+    "$oid": "60e31f3ea5c38140b4cb2a77"
+  },
+  "duration": "25 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 2] - Express Setup & Routes",
+  "headingid": "MS2",
+  "coursepath": "DQ9pZ2NKXRo"
+},{
+  "_id": {
+    "$oid": "60e31f8fa5c38140b4cb2a78"
+  },
+  "duration": "16 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 3] - User Model & Register",
+  "headingid": "MS3",
+  "coursepath": "1ZeDy2QI3OE"
+},{
+  "_id": {
+    "$oid": "60e31fdca5c38140b4cb2a79"
+  },
+  "duration": "24 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 4] - API Authentication and Token",
+  "headingid": "MS4",
+  "coursepath": "6pdFXmTfkeE"
+},{
+  "_id": {
+    "$oid": "60e32b4aa5c38140b4cb2a7a"
+  },
+  "duration": "22 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 5] - Angular 2 Components & Routes",
+  "headingid": "MS5",
+  "coursepath": "zrViDpWiNVE"
+},{
+  "_id": {
+    "$oid": "60e32bc2a5c38140b4cb2a7b"
+  },
+  "duration": "20 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 6] - Register Component, Validation & Flash Messages",
+  "headingid": "MS6",
+  "coursepath": "bxZAPoeMr7U"
+},{
+  "_id": {
+    "$oid": "60e32cd3a5c38140b4cb2a7c"
+  },
+  "duration": "12 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 7] - Auth Service & User Registration",
+  "headingid": "MS7",
+  "coursepath": "dFftMN32jyQ"
+},{
+  "_id": {
+    "$oid": "60e32d3da5c38140b4cb2a7d"
+  },
+  "duration": "20 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 8] - Login & Logout",
+  "headingid": "MS8",
+  "coursepath": "rt6VSxXL4_w"
+},{
+  "_id": {
+    "$oid": "60e32d88a5c38140b4cb2a7e"
+  },
+  "duration": "24 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 9] - Protected Requests & Auth Guard",
+  "headingid": "MS9",
+  "coursepath": "OILrJmjkId4"
+},{
+  "_id": {
+    "$oid": "60e32ddca5c38140b4cb2a7f"
+  },
+  "duration": "17 minutes",
+  "coursename": "Mean Stack",
+  "headingname": "MEAN Stack Front To Back [Part 10] - App Deployment to Heroku",
+  "headingid": "MS10",
+  "coursepath": "cBfcbb07Tqk"
+}]

@@ -1,0 +1,49 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Update Status</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+
+                    <li>Update Status</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="faculty_wrapper" class="faculty_wrapper">
+
+        <div class="container" style="height:280px;">
+
+            <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin-top:3%">
+
+                <div class="course_subscribe" style="width:60%;margin-left:22%">
+                    <div class="login">
+                        <div class="container">
+
+
+                            <div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
+
+                                <div class="row mt-3">
+                                    <div class="col-md-12"><label class="labels">Status</label><input type="text"
+                                            class="form-control" placeholder="Enter status" name="status"
+                                            [(ngModel)]="status">
+                                    </div>
+                                </div>
+                                <input type="submit" name="b1" (click)="onupdate()" value="Update">
+                                <br>
+                               
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

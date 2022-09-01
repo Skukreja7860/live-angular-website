@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "60def79c5e6410498065f8b7"
+  },
+  "category": "60d72dc98fbde94c84a1a3df",
+  "subcategory": "60d7310348bbe82d3418b4ad",
+  "dataname": "\"The Story of my Life\"",
+  "description": "The Story of My Life is an autobiography by activist Helen Keller in which she recounts her early experiences and education. An illness left Keller deaf and blind at nineteen months, and she was unable to communicate until her first teacher, Anne Sullivan, showed her how to use the manual alphabet.",
+  "datapic": "1625225116779The-Story-of-My-Life.pdf"
+},{
+  "_id": {
+    "$oid": "60def85a5e6410498065f8b8"
+  },
+  "category": "60d72dc98fbde94c84a1a3df",
+  "subcategory": "60d96e543ccca367a8b16b58",
+  "dataname": "\"Automation and Robotics\"",
+  "description": "Automation use control systems consist of instrumentation, human interface and communication. This book of robotics deals with design, operation and construction of robots. This robotics book introduces essential reference with detailed illustrations for automation and robotics whether engineering students, teachers or professionals across the world.",
+  "datapic": "1625225305849automation-and-robotics.pdf"
+},{
+  "_id": {
+    "$oid": "60def9a95e6410498065f8b9"
+  },
+  "category": "60d72e0c8fbde94c84a1a3e1",
+  "subcategory": "60deedfefc420e104444fb9b",
+  "dataname": "\"Multi-Grade  Teaching Practices in Austrian and Finnish  Primary Schools\"",
+  "description": "This article describes the teaching strategies used in multi-grade classes in five small rural primary schools in Austria and Finland on the basis of the content analysis of transcribed teacher interviews. Two main types of strategies were identified: practices that (1) aim to reduce or (2) capitalize on students' heterogeneity. The results illustrate how differently multi-grade teaching can be realized and how it can effectively support individual student learning. The findings are discussed with regard to teacher education with the intention of increasing the awareness of the professional skills required in high-quality teaching practices in multi-grade teaching.",
+  "datapic": "1625225641655article2.pdf"
+},{
+  "_id": {
+    "$oid": "60defa645e6410498065f8ba"
+  },
+  "category": "60d72e0c8fbde94c84a1a3e1",
+  "subcategory": "60deee1bfc420e104444fb9c",
+  "dataname": "\"Teacher Classroom Practices and Student Performance: How Schools Can Make a Difference\"",
+  "description": "Quantitative studies of school effects have generally supported the notion that the problems of U.S. education lie outside of the school. Yet such studies neglect the primary venue through which students learn, the classroom. The current study explores the link between classroom practices and student academic performance by applying multilevel modeling to the 1996 National Assessment of Educational Progress in mathematics. The study finds that the effects of classroom practices, when added to those of other teacher characteristics, are comparable in size to those of student background, suggesting that teachers can contribute as much to student learning as the students themselves.",
+  "datapic": "1625225828260article3.pdf"
+},{
+  "_id": {
+    "$oid": "60e2ffd5ef0e1165507a3af7"
+  },
+  "category": "60d72dc98fbde94c84a1a3df",
+  "subcategory": "60e2feb9ef0e1165507a3af3",
+  "dataname": "\"The Story of my Life\"",
+  "description": "The Story of My Life is an autobiography by activist Helen Keller in which she recounts her early experiences and education. An illness left Keller deaf and blind at nineteen months, and she was unable to communicate until her first teacher, Anne Sullivan, showed her how to use the manual alphabet.",
+  "datapic": "1625489364901The-Story-of-My-Life.pdf"
+},{
+  "_id": {
+    "$oid": "60e30127ef0e1165507a3af8"
+  },
+  "category": "60d72dc98fbde94c84a1a3df",
+  "subcategory": "60e2fed5ef0e1165507a3af4",
+  "dataname": "\"Automation and Robotics\"",
+  "description": "Industrial Automation and Robotics provides a basic but technical introduction to the field of robotics in industrial applications, and covers the basic mechanical and electrical concepts involved and how they are used in automation. Chapters survey physics laws and basic principles of operation, closely inspect circuitry and fluidics, and add information on the programming and operations of robots. Packed with technical discussions and an attention to an overview that is clear and definitive, Industrial Automation and Robotics is recommended as a basic introduction for any novice entering the field.\"--The Technology Shelf, The Bookwatch \"Midwest Book Review \" --This text refers to the hardcover edition.",
+  "datapic": "1625489703466automation-and-robotics.pdf"
+},{
+  "_id": {
+    "$oid": "60e30151ef0e1165507a3af9"
+  },
+  "category": "60d72e0c8fbde94c84a1a3e1",
+  "subcategory": "60e2ff15ef0e1165507a3af5",
+  "dataname": "\"Multi-Grade  Teaching Practices in Austrian and Finnish  Primary Schools\"",
+  "description": "This article describes the teaching strategies used in multi-grade classes in five small rural primary schools in Austria and Finland on the basis of the content analysis of transcribed teacher interviews. Two main types of strategies were identified: practices that (1) aim to reduce or (2) capitalize on students’ heterogeneity. The results illustrate how differently multi-grade teaching can be realized and how it can effectively support individual student learning. The findings are discussed with regard to teacher education with the intention of increasing the awareness of the professional skills required in high-quality teaching practices in multi-grade teaching.",
+  "datapic": "1625489745154article2.pdf"
+},{
+  "_id": {
+    "$oid": "60e3017fef0e1165507a3afa"
+  },
+  "category": "60d72e0c8fbde94c84a1a3e1",
+  "subcategory": "60e2ff3def0e1165507a3af6",
+  "dataname": "\"Teacher Classroom Practices and Student Performance: How Schools Can Make a Difference\"",
+  "description": "Quantitative studies of school effects have generally supported the notion that the problems of U.S. education lie outside of the school. Yet such studies neglect the primary venue through which students learn, the classroom. The current study explores the link between classroom practices and student academic performance by applying multilevel modeling to the 1996 National Assessment of Educational Progress in mathematics. The study finds that the effects of classroom practices, when added to those of other teacher characteristics, are comparable in size to those of student background, suggesting that teachers can contribute as much to student learning as the students themselves.",
+  "datapic": "1625489791182article3.pdf"
+}]

@@ -1,0 +1,78 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Mean Stack</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a> /</li>
+                    <li><a routerLink="/coursevideos">Mean Stack</a>/</li>
+                    <li>Start Course </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dtl_wrap" class="dtl_wrap">
+
+        <div class="container" style=" margin:0px">
+
+       <div style="display:flex;">
+           
+            <!-- Course Progress -->
+        
+        
+        
+        <div  style="width:30% ">
+        <div style="background-color:black;color:white;height:50px;margin:0px;text-align:center;font-size:22px;padding:2%">Course Videos</div>
+            <div class="col-sm-12 course-section">
+                
+                <ul class="section-list" *ngFor="let x of allvideos">
+        
+                    <li data-lecture-id="31398144" data-lecture-url="/courses/web-development-training/lectures/31398144"
+                        class="section-item completed unlocked-lecture" >
+                        <a class="item" 
+                       (click)="fetchid(x.headingid)" style="color:black">
+                         
+                            <span class="status-container" aria-label="Completed item">
+                                <span class="status-icon">
+                                    &nbsp;
+                                </span>
+                            </span>
+                            <div class="title-container">
+                                <span class="lecture-icon v-middle">
+                                    <i class="fa fa-youtube-play" height="40px" width="40px" style="margin-bottom:1%" aria-hidden="true"></i>
+                                </span>
+                                <span style="font-size:18px;padding:10px">
+                                   {{x.headingname}}
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+        
+                    
+        
+                </ul><br/><br/>
+                <button  (click)="oncomplete()">Complete Course</button>
+            </div>
+        </div>
+
+   <div style="width:60%;margin:0px 2% 0px 2%">
+    <div style="background-color:black;color:white;height:50px;text-align:center;font-size:22px;padding:2%;width:135%">
+        {{heading}}</div><br/><br/>
+                 <iframe width="1050" height="900"
+                    [src]="getEmbedUrl()" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                
+           
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>

@@ -1,0 +1,167 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3" style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>{{allcourse[0].coursename}}</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a>Courses</a> /</li>
+                    <li>{{allcourse[0].coursedataname}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dtl_wrap" class="dtl_wrap">
+
+        <div class="container" >
+
+            <div class="dtl_wrapper col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin:0px 20px 0px 20px">
+
+                <div class="dtl_inner_wrap">
+
+                    <div>
+                        <div class="dtl_head">
+                            <h1>{{allcourse[0].coursedataname}}</h1>
+                            
+                        </div>
+                        <div class="dtl_block">
+                            <div class="dtl_img">
+                                <img src="uploads/{{allcourse[0].coursedatapic}}" height="500px">
+                            </div>
+                            <div class="detail_text_wrap">
+                                <div class="info_wrapper">
+                                    <div class="info_head">
+                                        <h4>Description</h4>
+                                        <p>{{coursedes}}</p>
+                                    </div>
+                                </div>
+                                <div class="info_wrapper">
+                                    <div class="info_head">
+                                        <h4>What You will Learn</h4>
+                                    </div>
+                                    
+                                   
+                                       <ul style="margin: 20px 0;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;">
+                                           <li>{{courselearn.cl1}}</li>
+                                            <li>{{courselearn.cl2}}</li>
+                                            <li>{{courselearn.cl3}}</li>
+                                            <li>{{courselearn.cl4}}</li>
+                                            <li>{{courselearn.cl5}}</li>
+                                            <li>{{courselearn.cl6}}</li>
+                                       </ul>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dtl_related_article">
+
+
+                        <div class="comments-form-wrapper clearfix">
+                            <h3 style="color:red">Add Your Review</h3>
+                            <form id="postComment" style="background-color:gainsboro;text-align:center;padding:10px" name="ureview" #ureview="ngForm">
+                                <div class="field">
+                                    <label>Name <em class="required">*</em></label>
+                                    <input type="text" class="input-text" style="margin:auto" title="Name" id="user" #fullname="ngModel" placeholder="Full Name ..." name="user_name" [(ngModel)]="name" required pattern="[a-zA-Z ]*"/>
+                                    <div *ngIf=" fullname.touched && fullname.invalid&& fullname.errors.required "
+                                        style="font-size:12px;color:red;padding-bottom:10px; ">*name is required</div>
+                                    <div *ngIf="fullname.touched && fullname.invalid&& fullname.errors.pattern "
+                                        style="font-size:12px;color:red;padding-bottom:10px; "> *Only contain uppercase or lowercase letters </div>
+                                </div>
+                                <div class="field">
+                                    <label>Email <em class="required">*</em></label>
+                                    <input type="text" class="input-text" style="margin:auto" class="form-control" title="Email" id="email" placeholder="Email ..." #format="ngModel" name="user_email" [(ngModel)]="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                                    <div *ngIf="format.touched && format.invalid&& format.errors.required"
+                                        style="font-size:12px;color:red;padding-bottom:10px; ">*E-mail is required</div>
+                                    <div *ngIf="format.touched && format.invalid&& format.errors.pattern"
+                                        style="font-size:12px;color:red;padding-bottom:10px; "> *Must be in proper format </div>
+                                </div>
+                                <div class="field aw-blog-comment-area">
+                                    <label for="comment">Comment <em class="required">*</em></label>
+                                    <textarea rows="5" cols="50" class="input-text" title="Comment" #comments="ngModel" placeholder="Leave Comments ..." id="comment" name="comment" [(ngModel)]="comment" required></textarea>
+                                <div *ngIf="comments.touched&& comments.invalid&& comments.errors.required "
+                                    style="font-size:12px;color:red;padding-bottom:10px; ">*Please type something...</div>
+                                </div>
+                                <div class="mt_5">
+                                    <input type="hidden" value="1" name="blog_id">
+                                    <button type="submit" class="button continue" (click)="review(ureview)">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <br/><br/>
+                    <button style="margin-left:43% " (click)="check()">Check Reviews</button><br/>
+                   &nbsp; {{msg}}<div><br/>
+                        <ul *ngFor="let x of allreviews" style="border:2px solid black;list-style-type: none;margin:4%">
+                           <li><img src="uploads/profile.png" style="border-radius:30px;height:50px;margin:2%"><span style="font-size:22px;">{{x.name}}</span></li>
+                            <li style="margin-left:8%;position:relative;top:-35px">{{x.email}}</li>
+                            <li style="margin-left:8%;position:relative;top:-35px">{{x.comment}}</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="aside_wrapper col-lg-3 col-md-4 col-sm-12 col-xs-12" style="width:50%;display:-webkit-inline-box;margin-top:10%;">
+
+                    <div class="hookup_wrap" >
+                        <h3 class="course_tutor">Course Details</h3>
+                        <ul>
+                            
+                            <li><span class="hookup_tag"><i class="fa fa-clock-o"></i> Duration</span><span class="hookup_duration">{{allcourse[0].coursedataduration}}</span></li>
+                            <li><span class="hookup_tag"><i class="fa fa-certificate"></i> Certification</span><span class="hookup_duration">{{allcourse[0].coursedatacertificate}}</span></li>
+                                    <li><span class="hookup_tag"><i class="fa fa-money"></i> Fees</span><span
+                                            class="hookup_duration">{{allcourse[0].coursedatarate}}</span></li>
+                            <li><span class="hookup_tag"><i class="fa fa-language"></i> Language</span><span class="hookup_duration">{{allcourse[0].coursedatalang}}</span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="course_tutor" style="margin-left:10%;height:250px;width:90%">
+                        <h4>Instructors</h4>
+                        <h3 style="text-transform:capitalize;margin:10% 0px 10% 0px"><i class="fa fa-user" aria-hidden="true" style="height:30px ;width:30px;padding-top:4px"></i>&nbsp;{{allcourse[0].coursedatains}}</h3>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    
+    
+        <div *ngIf="flag">
+        <div style="font-size:35px;font-weight:600;font-family:Arial, Helvetica, sans-serif;text-align:center">Do you want to enroll for the course ?? Go through these steps</div><br/>
+       <div class="container" style="margin-bottom:10px">
+        <ul class="progressbar">
+            <li class="active"><i class="fa fa-laptop"></i>&nbsp;Select Course</li>
+            <li><i class="fa fa-cart-plus"></i>&nbsp;Add to Cart</li>
+        <li><i class="fa fa-clipboard"></i>&nbsp;Fill Details & <i class="fa fa-money" ></i>&nbsp; Make Payment</li>
+            <li><i class="fa fa-laptop"></i>&nbsp;Access Course</li>
+        </ul>
+        </div>
+        <button type="submit" class="button continue" style="margin-left:47%;margin-top:4%;margin-bottom:10px" (click)="oncartadd()">Add To
+            Cart</button></div>
+        <div *ngIf="flag2">
+<div style="font-size:35px;font-weight:600;font-family:Arial, Helvetica, sans-serif;text-align:center">Do you want to
+    enroll for the course ?? Click the below button</div>
+    <button type="submit" class="button continue" style="margin-left:47%;margin-top:4%;margin-bottom:10px"
+        (click)="onenroll()">Enroll</button>
+        
+        
+    </div><br/>
+ </div>

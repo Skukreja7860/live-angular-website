@@ -1,0 +1,60 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Popular Courses</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a>/</li>
+                    <li>{{coursedata[0].coursedataname}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1
+        style="font-size:50px;font-weight:500;font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:whitesmoke;padding:7px;text-align:center">
+        PAID COURSES</h1>
+    <div id="courses_wrapper" class="courses_wrapper"
+        style="background-color:lightsteelblue;margin:20px 0px 20px 0px;display:flex">
+
+
+        <div class="container" *ngFor="let x of coursedata">
+
+
+
+
+
+
+
+
+            <div class="course_block" style="width:500px;height:400px;margin:40px">
+                <div>
+                    <!-- <iframe width="460" height="240" src="https://www.youtube.com/embed/uONz0lEWft0?list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> -->
+                    <a routerLink="/courseDetail" [queryParams]="{courseid:x._id}"><img
+                            src="uploads/{{x.coursedatapic}}" width="460" height="240"></a>
+                    <div>
+                        <a href="course_dtl.html" title="View More"></a>
+                    </div><br />
+                    <h4>{{x.coursedataname}}</h4>
+                </div>
+                <div class="science">
+                    <div class="course_info">
+
+                    </div>
+                </div>
+                <div class="science course_count_wrap">
+                    <div class="course_count">
+                        Duration: <span>{{x.coursedataduration}}</span>
+                    </div>
+                    <div class="course_price">
+                        Fees: <span>{{x.coursedatarate}}</span>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+</div>
+

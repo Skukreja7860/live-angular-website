@@ -1,0 +1,52 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_group_in_campus.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Update Sub Category</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a> /</li>
+                    <li>Update Sub Category</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="faculty_wrapper" class="faculty_wrapper">
+
+    <div class="container" style="height:280px;">
+
+        <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12"
+            style="width:50%; margin-left:27%;margin-top:3%">
+
+        <div class="course_subscribe">
+            <form name="formsearch" enctype="multipart/form-data">
+                <div class="group" style="margin-bottom:20px">
+        
+        
+                    <input type="text" name="subcatname" [(ngModel)]="subcatname" placeholder="Sub Category Name" required=" ">
+                </div>
+                <div class="group">
+                    {{picname}}<br><br>
+        
+                    Choose new file, if required<br>
+        
+                    <input type="file" name="subcatpic" (change)="fileselected($event)">
+                </div>
+        
+                <div class="group " style="margin-bottom:15px">
+                    <input type="submit" class="button" value="update"
+                        style="background-color:skyblue;font-size:18px;font-weight:600;" (click)="onsubcatupdate()">
+                </div>
+            </form> {{msg}}
+        
+        
+        </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,122 @@
+
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/instructor.png) no-repeat; background-attachment: fixed; background-position: top left; background-size: cover;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Our Tutor's Details</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a>{{tutordetails[0].level}} Level Tutors</a> /</li>
+                    <li>Tutor's Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dtl_wrap" class="dtl_wrap">
+    
+        <div class="container">
+    
+            <div class="dtl_wrapper col-lg-9 col-md-8 col-sm-12 col-xs-12" style="width:100%;margin:0px 20px 0px 20px">
+    
+                <div class="dtl_inner_wrap" >
+    
+                    <div class="dtl_inner last">
+                        <div class="dtl_block teach_sin_block">
+                            <div class="dtl_img teach_sin_img">
+                                <div class="col-md-5 col-xs-12 text-center">
+                                    <img src="uploads/{{tutordetails[0].picture}}">
+                                </div>
+                                <div class="teacher_info col-md-7 col-xs-12">
+                                    <h4>{{tutordetails[0].name}}<em>{{tutordetails[0].subject}} teacher</em></h4>
+                                    <div class="teach_profession">
+                                        <h5>Email Id:</h5>
+                                        <em>
+                                            {{tutordetails[0].email}}
+                                        </em>
+                                    </div>
+                                    <div class="teach_profession">
+                                        <h5>Skills:</h5>
+                                        <em>
+                                           {{tutordetails[0].skills}}
+                                        </em>
+                                    </div>
+                                    <div class="teach_sumarry">
+                                        <h5>Summary:</h5>
+                                        <p>{{tutordetails[0].bio}}</p>
+                                    </div>
+                                    <div class="teach_sumarry">
+                                        <h5>Work Experience:</h5>
+                                        <p>{{tutordetails[0].experience}}</p>
+                                    </div>
+                                    
+                                   <div *ngIf="flag2"> <h5>To view more click here</h5>
+                                    <button (click)="onview()">View Profile</button></div>
+                                    <div *ngIf="flag">
+<div class="teach_sumarry">
+    <h5>College:</h5>
+    <p>{{tutordetails[0].college}}</p>
+</div>
+<div class="teach_sumarry">
+    <h5>Country:</h5>
+    <p>{{tutordetails[0].country}}</p>
+</div>
+<div class="teach_sumarry">
+    <h5>Contact No:</h5>
+    <p>{{tutordetails[0].contact}}</p>
+</div>
+<div class="teach_sumarry">
+    <h5>Get tutoring at an affordable price</h5>
+    <div style="display:inline-flex;border:4px solid black">
+        <div style="margin:2% 3% 2% 3%;width:200px;font-size:20px;height:150px">
+            <div class="teach_summary"><span class="_3UX5p">One To</span> One</div>
+            <div class="teach_summary">Interaction<hr/></div>
+            <div class="_3ONBs" aria-hidden="true">
+                <div class="_2i5Oz"><i class="fa fa-check-circle" width="20px" height="40px"></i>&nbsp; Rs.{{tutordetails[0].one2one}}/hour</div>
+                
+                
+            </div>
+           
+        </div>
+        <div  style="margin:2% 3% 2% 3%;width:240px;font-size:20px;height:150px">
+            <div  class="teach_summary"><span class="_3UX5p">Group Study </span> with</div>
+            <div  class="teach_summary">8 Students<hr/></div>
+            <div class="_3ONBs" aria-hidden="true">
+                <div class="_2i5Oz"><i class="fa fa-check-circle"  width="20px" height="40px"></i>&nbsp; Rs.{{tutordetails[0].group8}}/hour</div>
+        
+        
+            </div>
+        
+        </div>
+        <div style="margin:2% 3% 2% 3%;width:240px;font-size:20px;height:150px">
+            <div  class="teach_summary"><span class="_3UX5p">Group Study </span> with</div>
+            <div  class="teach_summary">12 or more Students<hr/></div>
+            <div class="_3ONBs" aria-hidden="true">
+                <div class="_2i5Oz"><i class="fa fa-check-circle"  width="20px" height="40px"></i>&nbsp; Rs.{{tutordetails[0].group12}}/hour</div>
+        
+        
+            </div>
+        
+        </div>
+       
+</div><br/><br/>
+
+
+
+
+
+<h5>If you want as a Tutor,click the bellow button</h5>
+<button (click)="startnow()">Start Learning</button>
+                                    </div>
+                                </div>
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

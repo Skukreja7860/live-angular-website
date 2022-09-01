@@ -1,0 +1,60 @@
+<div class="content_wrapper">
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Feedback</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li>Feeback</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<body>
+    <fieldset style="padding-top:20px">
+        <div id="id1">Rate my website!</div>
+        <div id="id2">Please let us know your experience with our website</div>
+        <form name="formfeed" #form="ngForm">
+            <div id="id3">Full Name</div>
+            <input  type="text"  class="form-control" name="name" [(ngModel)]="name"  #fullname="ngModel" required pattern="[a-zA-Z ]*">
+            <div *ngIf=" fullname.touched && fullname.invalid&& fullname.errors.required "
+                style="font-size:12px;color:red;padding-bottom:10px; ">*Name is required</div>
+            <div *ngIf="fullname.touched && fullname.invalid&& fullname.errors.pattern "
+                style="font-size:12px;color:red;padding-bottom:10px; "> *Only contain uppercase or lowercase letters </div>
+            
+            
+            <div id="id8">E-mail</div>
+            <input  type="email" name="E-mail" class="form-control" [(ngModel)]="email" placeholder="ex:myname@example.com" #format="ngModel"  required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <div *ngIf="format.touched && format.invalid&& format.errors.required"
+                style="font-size:12px;color:red;padding-bottom:10px; ">*E-mail is required</div>
+            <div *ngIf="format.touched && format.invalid&& format.errors.pattern"
+                style="font-size:12px;color:red;padding-bottom:10px; "> *Must be in proper format </div>
+
+            <div id="id8" style="padding-bottom:22px;">Please rate my site:</div>
+            <div style="padding-bottom:10px;">
+                <span style="left:15%;position:relative;font-weight:bold;">1</span>
+                <span style="left:30%;position:relative;font-weight:bold;">2</span>
+                <span style="left:45%;position:relative;font-weight:bold;">3</span>
+                <span style="left:60%;position:relative;font-weight:bold;">4</span>
+                <span style="left:75%;position:relative;font-weight:bold;">5</span>
+            </div>
+            <div id="id11">
+                
+                <input style="left:15%;position:relative;" type="radio" name="rate" [(ngModel)]="rate" value="1" />
+                <input style="left:29%;position:relative;" type="radio" name="rate"  [(ngModel)]="rate"value="2" />
+                <input style="left:44% ;position:relative;" type="radio" name="rate"  [(ngModel)]="rate" value="3" />
+                <input style="left:59%;position:relative;" type="radio" name="rate"  [(ngModel)]="rate" value="4" />
+                <input style="left:74%;position:relative;" type="radio" name="rate"  [(ngModel)]="rate" value="5" />
+               
+            </div>
+            <div id="id8" style="padding-top:55px;">How would you suggest I improve it?</div>
+            <textarea class="form-control" rows="4" cols="50" name="remarks"  #message="ngModel"  [(ngModel)]="suggestion" required></textarea>
+            <div *ngIf="message.touched&& message.invalid&& message.errors.required" style="font-size:12px;color:red;padding-bottom:10px; ">*Please type something...</div>
+                <input  style="margin:20px 0px 40px 0px"type="submit" name="Submit" value="Submit" (click)="onclick(form)" />
+            </form>
+    </fieldset>
+</body>
+</div>

@@ -1,0 +1,80 @@
+<div class="content_wrapper">
+
+
+
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+        style="background: url(images/slider_inclass.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>My Purchases</h1>
+                <ul class="breadcrumbs">
+                    <li><a routerLink="/homepage">Home</a> /</li>
+                    <li><a routerLink="/paid">Paid Courses</a> /</li>
+                    <li>My Purchases</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+                    <div class="about">
+                        <div class="container" style="margin:5% auto">
+                            
+                            {{msg}}
+                            <table *ngIf="flag" class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                   
+                                    <th>Payment Mode</th>
+                                    <th>Amount</th>
+                                    <th>Order Date</th>
+                                    <th>Status</th>
+                                </tr></thead>
+                                <tbody>
+                                <tr *ngFor="let x of orderlist">
+                                    <td><a routerLink="/orderdetails" [queryParams]="{oid:x._id}">{{x._id}}</a></td>
+                                    
+                                    <td>{{x.pmode}}</td>
+                                    <td>{{x.billamt}}</td>
+                                    <td>{{x.orderdate}}</td>
+                                    <td><a (click)="statusdone(x.status)">{{x.status}}</a></td>
+                                </tr></tbody>
+                            </table>
+                    
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h2>Enroll Free Courses</h2><hr/><br/>
+                    <div class="about">
+                        <div class="container" style="margin:5% auto">
+                    
+                            {{msg2}}
+                            <table *ngIf="flag2" class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Course Picture</th>
+                                        <th>Course Id</th>
+                                        <th>Course Name</th>
+                                        
+                                        <th>Enroll Date</th>
+                                       <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let x of enrolllist">
+                                        
+                                        <td><img src="uploads/{{x.coursepic}}" height="100"></td>
+                                        <td>{{x.courseid}}</td>
+                                        <td>{{x.coursename}}</td>
+                                        <td>{{x.enrolldate}}</td>
+                                        <td><a (click)="enrolldone()">{{x.status}}</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
